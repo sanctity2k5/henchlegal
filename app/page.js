@@ -18,6 +18,7 @@ import Footer from "@/components/footer";
 function Home() {
   return (
     <div className="font-poppins">
+      TESTING CD/CD
       <NavBar />
       <BannerSection
         image={banner}
