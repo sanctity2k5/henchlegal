@@ -132,9 +132,9 @@ function About() {
         />
         {servicesObject.map((service, i) => {
           return (
-            <div className="px-4 mt-4 w-full md:px-20 lg:flex" key={i}>
+            <div className="px-4 mt-4 w-full md:px-20" key={i}>
               <button
-                className="flex justify-between w-full"
+                className="flex justify-between w-full lg:justify-start lg:gap-4"
                 onClick={() => toggleContent(i)}
               >
                 <h1 className="font-medium underline lg:text-[20px]">
@@ -150,7 +150,7 @@ function About() {
               </button>
               <span>
                 {content === i && (
-                  <p className="lg:text-[18px]">{service.content}</p>
+                  <p className="lg:text-[18px] mt-1">{service.content}</p>
                 )}
               </span>
             </div>
