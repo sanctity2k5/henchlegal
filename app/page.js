@@ -17,8 +17,7 @@ import Footer from "@/components/footer";
 
 function Home() {
   return (
-    <div className="font-poppins">
-      TESTING CD/CD
+    <div className="font-poppins bg-white">
       <NavBar />
       <BannerSection
         image={banner}
@@ -58,7 +57,7 @@ function Home() {
 <PageContents title="SERVICES" subtitle="An Overview of the services we offer at Hench Legal" />
 
   {servicesObject && servicesObject.map((service, index) => (
-    <div key={index} className="md:px-20">
+    <div key={index} className="md:px-20 text-black">
       <h1 className="py-4 bg-[#9a2002] rounded-lg px-4 text-white font-semibold text-[18px] mb-4 md:text-[24px]">{service.title}</h1>
       <h3 className="mb-2 md:mb-4 xl:text-[20px] xl:leading-10">{service.content}</h3>
       <Image src={service.image} className="rounded-xl mb-6 w-full h-[200px] md:h-[300px] xl:h-[400px]" alt={service.title} />
@@ -71,14 +70,14 @@ function Home() {
   <div className="xl:-mt-20">
 <PageContents title="OUR TEAM" />
 </div>
-<div className="xl:flex xl:gap-16">
+<div className="px-4 md:px-0 xl:flex xl:gap-16">
 {
   teamObject && teamObject.map((team, index) => (
-    <div key={index} className="bg-[#dad8db] h-[400px] mb-6 flex flex-col items-center px-4 rounded-2xl shadow-xl md:h-[600px] lg:px-12 xl:mt-10 xl:w-[500px]">
+    <div key={index} className="bg-[#dad8db] h-[450px] mb-6 flex flex-col items-center px-4 rounded-2xl shadow-xl md:h-[600px] lg:px-12 xl:mt-10 xl:w-[500px]">
       <Image src={team.image} className="rounded-[999px] mb-4 mt-8 w-36 h-[150px] md:w-48 md:h-48 md:mt-12" alt={team.title} />
       <h1 className=" font-bold text-[24px] md:text-[28px]">{team.title}</h1>
       <p className="text-[17px] text-[#7a7a7a] text-center md:text-[20px]">{team.content}</p>
-      <div className="flex gap-2 mt-6">
+      <div className="flex gap-2">
       <PiFacebookLogo className="w-10 h-10 md:w-16 md:h-16 mt-6" style={{ backgroundColor:'black', color:'red', padding:'10px', borderRadius:'999px' }} />
       <PiTwitterLogoFill className="w-10 h-10 md:w-16 md:h-16 mt-6" style={{ backgroundColor:'black', color:'red', padding:'10px', borderRadius:'999px' }} />
       <PiInstagramLogoThin className="w-10 h-10 md:w-16 md:h-16 mt-6" style={{ backgroundColor:'black', color:'red', padding:'10px', borderRadius:'999px' }} />
