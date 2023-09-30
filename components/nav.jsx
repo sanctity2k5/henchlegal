@@ -35,7 +35,7 @@ function NavBar() {
         <ul className={`hidden md:flex space-x-4`}>
           <li><a href="/" className="text-white">Home</a></li>
           <li><a href="/About" className="text-white">About Us</a></li>
-          <li><a href="#" className="text-white">Contact Us</a></li>
+          <li><a href="/Contact" className="text-white">Contact Us</a></li>
           <li><a href="#" className="text-white">Services</a></li>
         </ul>
       </div>
@@ -65,7 +65,7 @@ function NavBar() {
       <a href="/About" className="block text-[#666666] py-2 px-4 hover:text-red-500">About Us</a>
     </li>
     <li>
-      <a href="#" className="block text-[#666666] py-2 px-4 hover:text-red-500">Contact Us</a>
+      <a href="/Contact" className="block text-[#666666] py-2 px-4 hover:text-red-500">Contact Us</a>
     </li>
     <li>
       <a href="#" className="block text-[#666666] py-2 px-4 hover:text-red-500">Services</a>

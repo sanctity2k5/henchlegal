@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import NavBar from "@/components/nav";
 import BannerSection from "@/components/banner-section";
-import banner from "@/public/images/home-banner.jpg";
+import banner from "@/public/images/home-banner.png";
 import PageContents from "@/components/pageContents";
 import logoRed from "@/public/logo/logo-red-nobg.png";
 import overlay from "@/public/images/home-overlay.jpg";
