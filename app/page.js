@@ -75,7 +75,7 @@ function Home() {
   teamObject && teamObject.map((team, index) => (
     <div key={index} className="bg-[#dad8db] h-[450px] mb-6 flex flex-col items-center px-4 rounded-2xl shadow-xl md:h-[600px] lg:px-12 xl:mt-10 xl:w-[500px]">
       <Image src={team.image} className="rounded-[999px] mb-4 mt-8 w-36 h-[150px] md:w-48 md:h-48 md:mt-12" alt={team.title} />
-      <h1 className=" font-bold text-[24px] md:text-[28px]">{team.title}</h1>
+      <h1 className=" font-bold text-[24px] md:text-[28px] text-black">{team.title}</h1>
       <p className="text-[17px] text-[#7a7a7a] text-center md:text-[20px]">{team.content}</p>
       <div className="flex gap-2">
       <PiFacebookLogo className="w-10 h-10 md:w-16 md:h-16 mt-6" style={{ backgroundColor:'black', color:'red', padding:'10px', borderRadius:'999px' }} />
