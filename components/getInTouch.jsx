@@ -17,7 +17,7 @@ function GetInTouch() {
           <input
             type="text"
             id="name"
-            className="border border-gray-300 h-10 mb-2 rounded-lg xl:h-14 xl:w-[70%]"
+            className="border border-gray-300 h-10 mb-2 rounded-lg xl:h-14 xl:w-[70%] text-gray-800 lg:text-[24px]"
             required
           />
         </span>
@@ -29,7 +29,7 @@ function GetInTouch() {
           <input
             type="text"
             id="email"
-            className="border border-gray-300 h-10 mb-2 rounded-lg xl:h-14 xl:w-[70%]"
+            className="border border-gray-300 h-10 mb-2 rounded-lg xl:h-14 xl:w-[70%] text-gray-800 lg:text-[24px]"
             required
           />
         </span>
@@ -39,14 +39,14 @@ function GetInTouch() {
           </label>
           <textarea
             id="message" // You need to add an id for the textarea too
-            className="border border-gray-300 h-32 mb-2 rounded-lg xl:w-[70%]"
+            className="border border-gray-300 h-32 mb-2 rounded-lg xl:w-[70%] text-gray-800 lg:text-[24px]"
             required
           ></textarea>
         </span>
 
         <button
           type="submit"
-          className="bg-[#d03733] text-white w-16 p-2 rounded-lg mt-2 md:w-32 md:text-[24px]"
+          className="bg-[#d03733] text-white w-20 p-2 rounded-lg mt-2 md:w-32 md:text-[24px]"
         >
           Send
         </button>
