@@ -27,7 +27,7 @@ function GetInTouch() {
     try {
       await emailjs.send(
         "service_qc24u9k",
-        "template_yr4h11j555",
+        "template_yr4h11j",
         formParams,
         "RvWINbnR0zBAu8mcz"
       );
