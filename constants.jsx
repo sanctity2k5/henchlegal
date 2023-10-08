@@ -1,4 +1,11 @@
-import imgOne from "@/public/images/services-img-one.png";
+import imgOne from "@/public/illustrations/commercial-compliance.png";
+import imgTwo from "@/public/illustrations/debt-recovery.png";
+import imgThree from "@/public/illustrations/family-probate.png";
+import imgFour from "@/public/illustrations/real-estate.png";
+import imgFive from "@/public/illustrations/fintech.png";
+import teamOneImg from "@/public/images/business-man.jpg";
+import teamTwoImg from "@/public/images/woman.jpg";
+import teamThreeImg from "@/public/images/man.jpg";
 export const servicesObject = 
 [{
   title: "Corporate/Commercial/Compliance",
@@ -8,22 +15,22 @@ export const servicesObject =
 {
   title: "Debt Recovery",
   content: "Hench Legal’s experts will ensure that all required documents are properly completed and submitted within the prescribed deadlines. They will carefully review your company’s financial statements, shareholding details, directorship information, and other relevant records to ensure accuracy and compliance with legal requirements.",
-  image: imgOne,
+  image: imgTwo,
 },
 {
   title: "Family/Probate",
   content: "At Hench Legal, our team of experienced professionals understands the intricacies of Return of Allotment filings and the significance of accurate and timely submissions.",
-  image: imgOne,
+  image: imgThree,
 },
 {
   title: "Real Estate",
   content: "At Hench Legal, our team of experienced professionals understands the intricacies of Return of Allotment filings and the significance of accurate and timely submissions.",
-  image: imgOne,
+  image: imgFour,
 },
 {
   title: "Fintech/Tech Startup Advisory",
   content: "At Hench Legal, our team of experienced professionals understands the intricacies of Return of Allotment filings and the significance of accurate and timely submissions.",
-  image: imgOne,
+  image: imgFive,
 }
 ]
 
@@ -32,7 +39,7 @@ export const teamObject =
 [{
   title: "John Doe",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-  image: imgOne,
+  image: teamOneImg,
   linkOne: "",
   linkTwo: "",
   linkThree: ""
@@ -40,7 +47,7 @@ export const teamObject =
 {
   title: "John Doe",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-  image: imgOne,
+  image: teamTwoImg,
   linkOne: "",
   linkTwo: "",
   linkThree: ""
@@ -48,7 +55,7 @@ export const teamObject =
 {
   title: "John Doe",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-  image: imgOne,
+  image: teamThreeImg,
   linkOne: "",
   linkTwo: "",
   linkThree: ""

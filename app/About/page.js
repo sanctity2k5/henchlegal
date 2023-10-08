@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import Image from "next/image";
 import NavBar from "@/components/nav";
@@ -11,24 +10,23 @@ import { aimsObject } from "@/constants";
 import storyImgOne from "@/public/images/story-one.jpg";
 import storyImgTwo from "@/public/images/story-two.jpg";
 import storyImgThree from "@/public/images/story-three.jpg";
-import { servicesObject } from "@/constants";
-import { AiFillCaretRight } from "react-icons/ai";
-import { AiFillCaretDown } from "react-icons/ai";
 import Footer from "@/components/footer";
+import ServicesComponent from "@/components/servicesComponent";
 
 function About() {
-  const [content, setContent] = useState(null);
+   // Define and manage the content state in the parent component
+   const [content, setContent] = useState([]);
 
-  const toggleContent = (index) => {
-    if (content === index) {
-      setContent(null);
-    } else {
-      setContent(index);
-    }
-  };
-
+   // Function to update the content state when a service is expanded
+   const handleContentChange = (index) => {
+     if (content.includes(index)) {
+       setContent(content.filter((item) => item !== index));
+     } else {
+       setContent([...content, index]);
+     }
+   };
   return (
-    <div className="font-poppins">
+    <div className="font-poppins bg-white">
       <NavBar />
       <BannerSection
         image={banner}
@@ -73,7 +71,7 @@ function About() {
           ))}
       </section>
 
-      <section className="px-4 md:px-20 md:mt-10">
+      <section className="px-4 md:px-20 md:mt-10 text-gray-900">
         <div className="flex flex-col items-center md:flex-row lg:w-full lg:justify-center lg:px-80 xl:px-20">
           <Image
             src={storyImgOne}
@@ -123,39 +121,13 @@ function About() {
           </div>
         </div>
       </section>
-
-      <section className="mt-20 px-4 lg:px-20 mb-10">
-        <PageContents
-          title="SERVICES"
-          subtitle="Hench Legal Services at Your Command"
-          content="Financial Security and Independence: People often strive for financial stability and independence. This includes goals such as saving money, investing wisely, and achieving financial freedom to meet their needs and achieve their dreams."
-        />
-        {servicesObject.map((service, i) => {
-          return (
-            <div className="px-4 mt-4 w-full md:px-20" key={i}>
-              <button
-                className="flex justify-between w-full lg:justify-start lg:gap-4"
-                onClick={() => toggleContent(i)}
-              >
-                <h1 className="font-medium underline lg:text-[20px]">
-                  {service.title}
-                </h1>
-                <span>
-                  {content === i ? (
-                    <AiFillCaretDown className="w-4 h-8" />
-                  ) : (
-                    <AiFillCaretRight className="w-4 h-8" />
-                  )}
-                </span>
-              </button>
-              <span>
-                {content === i && (
-                  <p className="lg:text-[18px] mt-1">{service.content}</p>
-                )}
-              </span>
-            </div>
-          );
-        })}
+            <section>
+      <ServicesComponent 
+      content={content} onContentChange={handleContentChange}
+      title="SERVICES"
+      subtitle="Hench Legal Services at Your Command"
+      paragraph="Financial Security and Independence: People often strive for financial stability and independence. This includes goals such as saving money, investing wisely, and achieving financial freedom to meet their needs and achieve their dreams."
+      />
       </section>
 
       <section>

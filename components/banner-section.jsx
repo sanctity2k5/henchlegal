@@ -17,7 +17,7 @@ function BannerSection({ image, title, subtitle, moTitle, MoSubtitle, buttonText
         <h1 className="hidden md:flex md:text-[20px] mt-4 md:font-normal xl:text-[28px]">
           {title}
         </h1>
-        <h1 className=" flex items-center justify-center text-4xl md:text-4xl w-full text-[36px] font-bold md:hidden">
+        <h1 className=" flex items-center justify-center -mt-6 text-4xl md:text-4xl w-full text-[36px] font-bold md:hidden">
           {moTitle}
         </h1>
         <h3 className="text-xl md:text-3xl md:hidden">

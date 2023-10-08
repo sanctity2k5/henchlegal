@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from 'react';
+import Image from 'next/image';
+import logoRed from "@/public/logo/logo-white-nobg.png";
 
 function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,9 +12,9 @@ function NavBar() {
   };
 
   return (
-    <nav className="bg-[#9a2002] p-4 sm:px-20 lg:px-40 ">
-      <div className="flex justify-between">
-        <div className="text-white text-2xl font-bold">Your Logo</div>
+    <nav className="bg-[#9a2002] p-4 sm:px-20">
+      <div className="flex items-center justify-between md:px-20">
+        <div className=""><Image src={logoRed} className=' w-12 h-16 md:w-16 md:h-20 px-0 py-0' alt="logo" /></div>
         <button
           className="md:hidden text-white z-1 relative"
           onClick={toggleMobileMenu}
@@ -36,7 +38,7 @@ function NavBar() {
           <li><a href="/" className="text-white">Home</a></li>
           <li><a href="/About" className="text-white">About Us</a></li>
           <li><a href="/Contact" className="text-white">Contact Us</a></li>
-          <li><a href="#" className="text-white">Services</a></li>
+          <li><a href="/Services" className="text-white">Services</a></li>
         </ul>
       </div>
       {/* Mobile Menu */}
@@ -68,7 +70,7 @@ function NavBar() {
       <a href="/Contact" className="block text-[#666666] py-2 px-4 hover:text-red-500">Contact Us</a>
     </li>
     <li>
-      <a href="#" className="block text-[#666666] py-2 px-4 hover:text-red-500">Services</a>
+      <a href="/Services" className="block text-[#666666] py-2 px-4 hover:text-red-500">Services</a>
     </li>
   </ul>
 </div>
