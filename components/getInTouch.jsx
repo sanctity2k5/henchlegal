@@ -2,8 +2,9 @@
 import { useState } from "react";
 import PageContents from "./pageContents";
 import emailjs from "@emailjs/browser";
-// import Spinner from "react-bootstrap/Spinner";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+
 
 function GetInTouch() {
   const [spinner, loadSpinner] = useState(false);
@@ -88,9 +89,9 @@ function GetInTouch() {
           required
         ></textarea>
         {errorMessage && (
-          <p className="bg-red-600 text-white px-4 py-2 rounded-lg md:px-20 xl:w-[70%] xl:text-[18px]">
+          <p className="bg-red-600 text-white px-4 py-2 mb-2 rounded-lg md:px-20 xl:w-[70%] xl:text-[18px]">
             Message Not Sent... This might be due to some technical issues from
-            our end, Pleae try again later
+            our end, Please try again later
           </p>
         )}
 
@@ -108,9 +109,7 @@ function GetInTouch() {
           {spinner ? (
             <span className="flex gap-2 justify-center items-center text-[14px]">
               Loading...
-              <Spinner animation="border" role="status">
-                <span className="visually-hidden w-4 h-4">Loading...</span>
-              </Spinner>
+              <FontAwesomeIcon icon={faSpinner} />
             </span>
           ) : (
             "Send"

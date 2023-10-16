@@ -51,9 +51,9 @@ function Footer() {
         <hr className="w-full absolute left-0 mt-0" />
 
         <div className="flex gap-2 mt-2 text-[12px] justify-center w-full text-white mb-1 xl:mt-6">
-          <a href="" className="hover:underline">Disclaimer</a>
-          <a href="" className="hover:underline">Privacy Policy</a>
-          <a href="" className="hover:underline">Terms and Conditions</a>
+          <a href="/Disclaimer" className="hover:underline">Disclaimer</a>
+          <a href="/Privacy" className="hover:underline">Privacy Policy</a>
+          <a href="/Terms" className="hover:underline">Terms and Conditions</a>
         </div>
       </nav>
       <p className="text-[12px] text-white mb-2">
