@@ -2,8 +2,8 @@
 import { useState } from "react";
 import PageContents from "./pageContents";
 import emailjs from "@emailjs/browser";
-import Spinner from "react-bootstrap/Spinner";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import Spinner from "react-bootstrap/Spinner";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 function GetInTouch() {
   const [spinner, loadSpinner] = useState(false);

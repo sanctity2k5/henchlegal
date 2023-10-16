@@ -36,7 +36,8 @@ function Home() {
         image={banner}
         title="Choose our law firm and experience the power of unwavering advocacy"
         subtitle="NIGERIA'S MOST TRUSTED LEGAL PRACTITIONERS"
-        moTitle="Hench Legal"
+        genericTitle="HENCH LEGAL"
+        // moTitle="Hench Legal"
         MoSubtitle="Justice is our expertise, your rights are our mission."
         buttonText="Read More..."
       />
@@ -55,12 +56,12 @@ function Home() {
           alt="overlay"
           className="w-full h-[700px] md:h-[500px]"
         />
-        <div className="absolute top-0 left-0 w-full h-full text-white md:mt-5 md:px-20 lg:px-40">
+        <div className="absolute top-0 left-0 w-full h-full text-white md:mt-5 md:px-20 xl:px-40">
           <div className="px-4">
-          <h1 className="text-4xl lg:text-6xl mt-10 font-bold">
+          <h1 className="text-4xl lg:text-6xl mt-6 font-bold xl:mb-10 md:px-20">
             Why Choose Us?
           </h1>
-          <h3 className="text-xl lg:text-3xl mt-2 font-semibold mb-4">
+          <h3 className="text-xl lg:text-3xl mt-2 font-semibold mb-4 md:px-20 xl:leading-10">
             Personalized attention, keeping you informed and providing guidance
             throughout the legal process
           </h3>
@@ -96,7 +97,7 @@ function Home() {
           className="w-full hidden lg:flex lg:h-[1400px] xl:h-[1100px]"
         />
         <div className="lg:absolute top-0 left-0">
-          <section className="mt-20 px-4 lg:px-20 lg:mt-28">
+          <section className="mt-20 px-4 lg:px-20 lg:mt-28 xl:-mt-20">
             <PageContents
               title="SERVICES"
               subtitle="An Overview of the services we offer at Hench Legal"
